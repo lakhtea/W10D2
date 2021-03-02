@@ -22,25 +22,22 @@ export default class Clock extends React.Component {
 
   render() {
     return (
-      <div >
+      <div>
         <h1>Clock</h1>
-        <div className = "container">
+        <div className="container">
           <div>
             <h1>Time</h1>
             <h1>Date</h1>
           </div>
           <div>
-              <h1>
-                {this.state.currentTime.getHours()}:
-                {this.state.currentTime.getMinutes()}:
-                {this.state.currentTime.getSeconds()}
-                EST
-              </h1>
-              <h1>
-                {this.state.currentTime.toDateString()}
-              </h1>
-            </div>
+            <h1>
+              {this.state.currentTime.getHours()}:
+              {this.state.currentTime.getMinutes()}:
+              {this.state.currentTime.getSeconds()} EST
+            </h1>
+            <h1>{this.state.currentTime.toDateString()}</h1>
           </div>
+        </div>
       </div>
     );
   }
